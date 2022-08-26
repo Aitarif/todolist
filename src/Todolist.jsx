@@ -41,7 +41,7 @@ function Todolist() {
     if (todoIndex != null) {
       await Service.update({
             name: inputTodoRef.current.value,
-            name: inputDataRef.current.value,
+            date: inputDataRef.current.value,
       }, todoIndex)
         setTodoIndex(() => null);
     
